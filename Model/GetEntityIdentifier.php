@@ -26,7 +26,7 @@ class GetEntityIdentifier
             if (!array_key_exists($identifier, $data)) {
                 throw new CrtException(__('Identifier column not found:%1', $identifier));
             }
-            $result .= '.' . $data[$identifier];
+            $result .= '.' . str_replace('.','_',$data[$identifier]);
         }
 
         $result = ltrim($result, '.');
