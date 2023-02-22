@@ -9,7 +9,7 @@ declare(strict_types=1);
 namespace GhostUnicorns\CrtCsv\Transferor\Mappings\Json;
 
 use GhostUnicorns\CrtBase\Exception\CrtException;
-use GhostUnicorns\CrtCsv\Model\DotConvention;
+use GhostUnicorns\CrtUtils\Model\DotConvention;
 use GhostUnicorns\CrtCsv\Transferor\Mappings\MappingTypeInterface;
 
 class Path implements MappingTypeInterface
